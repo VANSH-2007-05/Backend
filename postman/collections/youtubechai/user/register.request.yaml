@@ -1,4 +1,35 @@
 $kind: http-request
 url: http://localhost:8000/api/v1/users/register
 method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: chai aur code
+      disabled: false
+    - type: text
+      key: username
+      value: chaiaurcode
+      disabled: false
+    - type: text
+      key: email
+      value: abs@g.com
+      disabled: false
+    - type: text
+      key: password
+      value: "123456"
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - postman-cloud:///1f1cfa11-fb13-4ef0-a96b-8356b5863b2f
+      description: ""
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - postman-cloud:///1f1cfa12-7d5e-46d0-b11a-85947f42ad79
+      description: ""
+      disabled: false
 order: 1000
